@@ -5,18 +5,21 @@ class MealsController < ApplicationController
   # GET /meals.json
   def index
     @meals = Meal.all
+    
   end
 
   # GET /meals/1
   # GET /meals/1.json
-  def show
-     
-  end
+  # def show
+  #  @comments = @idea.comments.all
+  #  @comment = @idea.comments.build
+  # end
 
   # GET /meals/new
   def new
     @meal = Meal.new
   end
+  
 
   # GET /meals/1/edit
   def edit
